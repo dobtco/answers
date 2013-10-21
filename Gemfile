@@ -8,11 +8,9 @@ gem 'rails', '3.2.14'                     # Rails!
 gem 'pg'                                  # PostgreSQL, the database server
 gem 'thin'                                # Web server
 
-gem 'newrelic_rpm', :group => [:production, :staging, :development] # Rails analytics - see the Heroku addon
 gem 'progressbar'                         # Display progress bars in terminal output
 gem 'facets', :require => false           # Some extra methods for ruby
 gem 'jquery-ui-rails'                     # Package jQuery for the Rails 3.1+ asset pipeline
-gem 'rollbar', '~>0.10.11'                # SaaS to track exceptions
 
 ## SEO
 gem 'meta-tags', :require => 'meta_tags'  # Search Engine Optimization (SEO) plugin for Ruby on Rails applications.

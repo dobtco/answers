@@ -154,7 +154,6 @@ GEM
     mime-types (1.23)
     multi_json (1.8.0)
     multi_xml (0.5.2)
-    newrelic_rpm (3.5.5.38)
     nokogiri (1.5.6)
     orm_adapter (0.4.0)
     paperclip (3.4.0)
@@ -205,8 +204,6 @@ GEM
     ref (1.0.2)
     responders (1.0.0.rc)
       railties (>= 3.2, < 5)
-    rollbar (0.10.11)
-      multi_json (~> 1.5)
     rspec (2.14.1)
       rspec-core (~> 2.14.0)
       rspec-expectations (~> 2.14.0)
@@ -296,12 +293,10 @@ DEPENDENCIES
   memcached
   meta-tags
   meta_search (>= 1.1.0.pre)
-  newrelic_rpm
   paperclip (~> 3.0)
   pg
   progressbar
   rails (= 3.2.14)
-  rollbar (~> 0.10.11)
   rspec-rails (>= 2.0)
   sass-rails (~> 3.2.5)
   seed_dump (~> 0.6.0)
