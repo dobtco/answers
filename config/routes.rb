@@ -1,4 +1,4 @@
-Honoluluanswers::Application.routes.draw do
+Answers::Application.routes.draw do
   root :to => "home#index"
 
   # Content management
