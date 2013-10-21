@@ -15,7 +15,7 @@
 /tmp
 
 .DS_Store
-config/dblogin.yml
+config/database.yml
 /.env
 
 config/initializers/searchify.rb

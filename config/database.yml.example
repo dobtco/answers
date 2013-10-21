@@ -1,8 +1,6 @@
 development:
   adapter: postgresql
   database: answers-dev
-  username: adamb
-  host: localhost
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -10,5 +8,3 @@ development:
 test:
   adapter: postgresql
   database: answers-test
-  username: adamb
-  host: localhost
