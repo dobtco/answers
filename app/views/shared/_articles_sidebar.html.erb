@@ -1,6 +1,6 @@
-      <div class="sidebar">  
+      <div class="sidebar">
         <%= render(:partial => 'shared/flash_info') if flash[:info] %>
-        <% unless @article.contact.nil? %>
+        <% if @article.contact %>
           <div class="sidebar-unit">
             <h4 class="side-head">NEED MORE INFO?</h4>
             <div class="sidebar-content">
