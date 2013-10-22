@@ -1,8 +1,8 @@
 class WebServicesController < ApplicationController
   def show
-    return render(:template => 'articles/missing') unless WebService.exists? params[:id]
+    return render(:template => 'articles/missing') unless WebService.friendly.exists? params[:id]
 
-    @article = WebService.find(params[:id])
+    @article = WebService.friendly.find(params[:id])
 
     authorize! :read, @article
 
@@ -13,8 +13,8 @@ class WebServicesController < ApplicationController
     end
 
     # basic statistics on how many times an article has been accessed
-    @article.delay.increment! :access_count
-    @article.delay.category.increment!(:access_count) if @article.category
+    @article.increment! :access_count
+    @article.category.increment!(:access_count) if @article.category
 
     unless @article.published?
       flash.now[:info] = "This article has not been published."

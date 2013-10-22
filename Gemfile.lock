@@ -193,11 +193,6 @@ GEM
       treetop (~> 1.4.8)
     meta-tags (1.5.0)
       actionpack
-    meta_search (0.5.4)
-      actionpack (>= 3.0.0.beta4)
-      activerecord (>= 3.0.0.beta4)
-      activesupport (>= 3.0.0.beta4)
-      arel (>= 0.4.0)
     mime-types (1.25)
     mini_portile (0.5.1)
     minitest (4.7.5)
@@ -344,7 +339,6 @@ DEPENDENCIES
   letter_opener
   meta-tags
   meta_request!
-  meta_search
   paperclip
   pg
   progressbar
