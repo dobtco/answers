@@ -16,6 +16,4 @@
 
 class User < ActiveRecord::Base
 
-  include DobtAuth::User
-
 end

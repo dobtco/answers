@@ -10,7 +10,6 @@ gem 'cancan'
 gem 'coffee-rails'
 gem 'dalli'
 gem 'delayed_job_active_record'
-gem 'dobt_auth', git: 'git@github.com:dobtco/auth.git'
 gem 'execjs'
 gem 'facets', require: false
 gem 'friendly_id'
