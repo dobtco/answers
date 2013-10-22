@@ -22,7 +22,6 @@ gem 'kgio'                                # gives 20~30% performance boost to Da
 
 ## Admin
 gem 'activeadmin', '0.6.0'                # Back-end Content Management System
-gem 'devise', '~> 2.0'                    # User authentication
 gem 'cancan'                              # User permissions
 
 ## Search and NLP
@@ -50,6 +49,7 @@ end
 
 ## Testing
 group :test, :development do
+  gem 'annotate'
   gem 'rspec-rails', '>= 2.0'             # Testing framework
   gem 'shoulda', '~> 3.5.0'               # Extra RSpec matchers for Active Record Associations
   gem 'factory_girl_rails', '~> 4.0'      # Create factories to test against

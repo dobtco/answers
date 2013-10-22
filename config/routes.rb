@@ -3,7 +3,6 @@ Answers::Application.routes.draw do
 
   # Content management
   ActiveAdmin.routes(self)
-  devise_for :users, :controllers => { :sessions => "sessions" }
 
   match '/about' => "home#about" , :as => :about
   match '/search/' => "search#index" , :as => :search, :via => [:get, :post]

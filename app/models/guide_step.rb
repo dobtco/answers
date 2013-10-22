@@ -1,3 +1,17 @@
+# == Schema Information
+#
+# Table name: guide_steps
+#
+#  id         :integer          not null, primary key
+#  article_id :integer
+#  title      :string(255)
+#  content    :text
+#  preview    :text
+#  step       :integer
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
+
 class GuideStep < ActiveRecord::Base
   belongs_to :guide, :class_name => 'Article', :foreign_key => 'article_id'
   attr_accessible :article_id, :title, :content, :preview, :step

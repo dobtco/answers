@@ -1,3 +1,15 @@
+# == Schema Information
+#
+# Table name: wordcounts
+#
+#  id         :integer          not null, primary key
+#  article_id :integer
+#  keyword_id :integer
+#  count      :integer
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
+
 require 'spec_helper'
 
 describe Wordcount do

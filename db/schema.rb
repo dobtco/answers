@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131001150637) do
+ActiveRecord::Schema.define(:version => 20131021235508) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.string   "resource_id",   :null => false
@@ -148,6 +148,13 @@ ActiveRecord::Schema.define(:version => 20131001150637) do
   end
 
   add_index "rails_admin_histories", ["item", "table", "month", "year"], :name => "index_rails_admin_histories"
+
+  create_table "sites", :force => true do |t|
+    t.integer "dobt_organization_app_id"
+    t.string  "name"
+    t.string  "username"
+    t.string  "custom_domain"
+  end
 
   create_table "users", :force => true do |t|
     t.string   "email",                  :default => "",    :null => false
