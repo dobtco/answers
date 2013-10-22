@@ -22,9 +22,11 @@ gem 'meta-tags', require: 'meta_tags'
 gem 'paperclip'
 gem 'pg'
 gem 'progressbar'
+gem 'rails_12factor'
 gem 'sass-rails'
 gem 'tanker'
 gem 'text'
+gem 'thin'
 gem 'uglifier'
 
 group :development do
