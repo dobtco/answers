@@ -12,6 +12,8 @@ gem 'dalli'
 gem 'delayed_job_active_record'
 gem 'execjs'
 gem 'facets', require: false
+gem 'factory_girl_rails'
+gem 'ffaker'
 gem 'friendly_id'
 gem 'httparty'
 gem 'hunspell-ffi'
@@ -45,8 +47,6 @@ end
 group :development, :test do
   gem 'capybara', '2.0.3'
   gem 'database_cleaner', '1.0.1'
-  gem 'factory_girl_rails'
-  gem 'ffaker'
   gem 'fuubar'
   gem 'rspec-rails'
   gem 'simplecov', require: false
