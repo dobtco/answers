@@ -18,8 +18,8 @@ class GuideStep < ActiveRecord::Base
 
   delegate :category, :tags, :keywords, :to => :guide
 
-  after_save { guide.update_tank_indexes }
-  after_destroy { guide.delete_tank_indexes }
+  # after_save { guide.update_tank_indexes }
+  # after_destroy { guide.delete_tank_indexes }
 
   after_create do
     guide.create_analysis

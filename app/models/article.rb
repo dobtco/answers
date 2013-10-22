@@ -78,12 +78,12 @@ class Article < ActiveRecord::Base
     :pending_review
 
   # Tanker callbacks to update the search index
-  after_save :update_tank_indexes
-  after_destroy :delete_tank_indexes
+  # after_save :update_tank_indexes
+  # after_destroy :delete_tank_indexes
 
   # priority 2 to ensure it is run after text analysis
-  handle_asynchronously :update_tank_indexes, :priority => 2
-  handle_asynchronously :delete_tank_indexes, :priority => 2
+  # handle_asynchronously :update_tank_indexes, :priority => 2
+  # handle_asynchronously :delete_tank_indexes, :priority => 2
 
   TEXT_ANALYSE_FIELDS = ['title', 'content_main', 'content_main_extra',
     'content_need_to_know', 'preview', 'tags', 'category_name']

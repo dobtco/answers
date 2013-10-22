@@ -9,17 +9,17 @@ module RailsNlp
     end
 
     def create_analysis
-      text_analyser.delay(:priority => 1).create_analysis
+      text_analyser.create_analysis
     end
 
     def update_analysis
       needs_analysis = !!(changes.keys & self.class::TEXT_ANALYSE_FIELDS).any?
       yield
-      text_analyser.delay(:priority => 1).update_analysis if needs_analysis
+      text_analyser.update_analysis if needs_analysis
     end
 
     def destroy_analysis
-      text_analyser.delay(:priority => 1).destroy_analysis
+      text_analyser.destroy_analysis
     end
 
     def self.included(base)
