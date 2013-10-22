@@ -7,4 +7,8 @@ class ApplicationController < ActionController::Base
     render(:template => 'articles/missing')
   end
 
+  def current_user
+    nil
+  end
+
 end
