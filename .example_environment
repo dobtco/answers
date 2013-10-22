@@ -1,8 +1,6 @@
 PORT=3000
 LD_LIBRARY_PATH=lib/native
 
-# For more info about setting up the below services, see the Github wiki for Honolulu Answers
-
 # IndexTank API info goes here
 # You will need to create a search index
 

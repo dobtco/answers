@@ -1,4 +1,4 @@
-<% set_meta_tags :description => "All #{@article_type.split(/(?=[A-Z])/).join(' ')} questions.", :canonical => "http://answers.honolulu.gov#{request.fullpath}" %>
+<% set_meta_tags :description => "All #{@article_type.split(/(?=[A-Z])/).join(' ')} questions." %>
 <div class="page-container">
   <div class="breadcrumbs">
     <%= link_to( "Home", root_url) %>
@@ -13,7 +13,7 @@
           <% category = nil %>
           <% @articles.each do |article| %>
           <% next unless article.published? %>
-            
+
               <% if( article.category != category) %>
                 <% if(category) %>
                     </ul>
@@ -26,8 +26,8 @@
                   <%= content_tag(:h1, link_to(article.category.name,article.category)) %>
                   <% end %>
                    <ul class="category-articles">
-              <% end %>      
-                    
+              <% end %>
+
                       <li class="article-listing">
                         <%= content_tag(:h2, link_to(article.title,article))%>
                         <p class="preview"><%= article.preview %></p>

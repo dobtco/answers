@@ -1,5 +1,4 @@
 <% set_meta_tags :description => @article.preview,
-                 :canonical => "http://answers.honolulu.gov#{request.fullpath}",
                  :title => [@article.category.name, @article.title] %>
 <div class="page-container article">
   <div class="breadcrumbs">
@@ -20,7 +19,7 @@
           </h1>
         </div>
         <div class="content-text">
-          
+
           <%= raw @content_html %>
 
 
@@ -71,27 +70,27 @@ function nextTab(){
         <h2 class="vtab-content-header"><%= step.title %></h2>
         <%= raw @article.raw_md_to_html( step.content ) %>
       </div>
-    <% end %> 
+    <% end %>
     <br/>
     <br/>
     <p style="margin-left:auto;margin-right:auto;text-align:center;display:block;">
 	    <a class="btn guidearrow" href="#" onclick="prevTab();" id="prev" style="display:inline;">&larr; Previous</a>
 	    &nbsp;&nbsp;&nbsp;&nbsp;
 	    |
-	    &nbsp;&nbsp;&nbsp;&nbsp;	    
+	    &nbsp;&nbsp;&nbsp;&nbsp;
 	    <a class="btn guidearrow" href="#" onclick="nextTab();" id="next" style="display:inline;">Next &rarr;</a>
 	</p>
-    
+
   </div>
 </div>
   <!-- -->
 
       </div>
     </div><!-- /span9 -->
-    
+
     <div class="span3">
       <%= render :partial => 'shared/articles_sidebar' %>
     </div><!-- /span3 -->
-    
+
   </div>
 </div>

@@ -1,6 +1,6 @@
 ActiveAdmin.setup do |config|
 
-  config.site_title = "Honolulu Answers CMS"
+  config.site_title = "Civic Answers CMS"
 
   config.site_title_link = "/admin"
 
