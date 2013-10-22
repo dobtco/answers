@@ -43,7 +43,7 @@ class Article < ActiveRecord::Base
 
   # Permalinks. :slugged option means it uses the 'slug' column for the url
   #             :history option means when you change the article title, old slugs still work
-  friendly_id :title, use: [:slugged, :history]
+  friendly_id :title, use: [:slugged, :history, :finders]
 
   belongs_to :contact
   belongs_to :category

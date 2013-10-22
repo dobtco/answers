@@ -19,7 +19,7 @@ class Category < ActiveRecord::Base
 
   before_validation :set_access_count_if_nil
 
-  friendly_id :name, use: [:slugged, :history]
+  friendly_id :name, use: [:slugged, :history, :finders]
 
   default_scope order('name ASC')
   scope :by_access_count, order('access_count DESC')

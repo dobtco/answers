@@ -1,8 +1,8 @@
 class QuickAnswersController < ApplicationController
   def show
-    return render(:template => 'articles/missing') unless QuickAnswer.exists? params[:id]
+    @article = QuickAnswer.friendly.find(params[:id]) rescue nil
 
-    @article = QuickAnswer.find(params[:id])
+    return render(:template => 'articles/missing') unless @article
 
     authorize! :read, @article
 

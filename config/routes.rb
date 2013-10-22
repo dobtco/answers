@@ -4,7 +4,8 @@ Answers::Application.routes.draw do
   # Content management
   ActiveAdmin.routes(self)
 
-  match '/about' => "home#about" , :as => :about
+  get 'about' => 'home#about'
+
   match '/search/' => "search#index" , :as => :search, :via => [:get, :post]
 
   resources :categories, :only => :show
@@ -15,5 +16,5 @@ Answers::Application.routes.draw do
   resources :quick_answers, :only => :show
   resources :web_services, :only => :show
   resources :guides, :only => :show
-  match '/articles/article-type/:content_type' => "articles#article_type"
+  get '/articles/article-type/:content_type' => "articles#article_type"
 end
